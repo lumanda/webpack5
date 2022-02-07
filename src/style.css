@@ -7,6 +7,5 @@
 
 .hello {
     color: red;
-    font-family: 'MyFont';
-    background: url('./secure.png');
+    background: url('./icon.png') no-repeat;
 }

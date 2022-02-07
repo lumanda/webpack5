@@ -1,7 +1,6 @@
 import _ from 'lodash'
 import './style.css'
 import Icon from './icon.png'
-import secure from './secure.png'
 
 function component() {
     var element = document.createElement('div');
@@ -13,11 +12,8 @@ function component() {
     // 将图像添加到我们现有的 div。
     var myIcon = new Image();
     myIcon.src = Icon;
-
     element.appendChild(myIcon);
-    var myIcon2 = new Image();
-    myIcon2.src = secure;
-    element.appendChild(myIcon2);
+
     return element;
 }
 

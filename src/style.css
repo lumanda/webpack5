@@ -1,3 +1,49 @@
 .hello {
     color: red;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #00b4db;
+    background: -webkit-linear-gradient(to right, #00b4db, #0083b0);
+    background: linear-gradient(to right, #00b4db, #0083b0);
+  }
+  .drop {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    box-shadow: inset 10px 10px 10px 10px rgba(0, 0, 0, 0.08),
+      15px 25px 10px rgba(0, 0, 0, 0.15), 
+      15px 20px 20px rgba(0, 0, 0, 0.05),
+      inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+    border-radius: 56% 44% 43% 57% / 49% 53% 47% 51%;
+  }
+  .drop::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    top: 35px;
+    left: 25px;
+    border-radius: 69% 31% 43% 57% / 49% 57% 43% 51%;
+  }
+  .drop::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    top: 27px;
+    left: 45px;
+  }
+  

@@ -11,4 +11,13 @@ function component() {
     return element;
 }
 
-document.body.appendChild(component());
+function componentDrop() {
+    var element = document.createElement('div');
+
+    element.classList.add('drop');
+
+    return element;
+}
+
+// document.body.appendChild(component());
+document.body.appendChild(componentDrop());
